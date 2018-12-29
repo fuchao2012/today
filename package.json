@@ -1,0 +1,47 @@
+{
+  "name": "today",
+  "version": "0.0.1",
+  "description": "today contribute to gitlab",
+  "private": true,
+  "bin": {
+    "today": "bin/today"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
+    "test": "jest",
+    "watch": "jest --watch",
+    "snapupdate": "jest --updateSnapshot",
+    "coverage": "jest --coverage"
+  },
+  "files": [
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin",
+    "src"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "acorn": "^6.0.4",
+    "date-fns": "^1.30.1",
+    "gluegun": "next"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "prettier": "^1.12.1",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
